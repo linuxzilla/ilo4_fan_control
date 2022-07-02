@@ -1,0 +1,8 @@
+version: '3.3'
+services:
+  fan_control:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: fan-controller  
+    restart: unless-stopped
